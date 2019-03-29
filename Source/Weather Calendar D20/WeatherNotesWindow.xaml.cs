@@ -13,11 +13,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Weather_Calendar_D20.Extensions;
-using Weather_Calendar_D20.Weather;
-using Weather_Calendar_D20.Weather.Data;
+using Weather_Calendar.Extensions;
+using Weather_Calendar.Weather;
+using Weather_Calendar.Weather.Data;
 
-namespace Weather_Calendar_D20
+namespace Weather_Calendar
 {
     public partial class WeatherNotesWindow : Window
     {
@@ -336,7 +336,7 @@ namespace Weather_Calendar_D20
 
         private void OnApplicationExit()
         {
-            CalendarData.SaveCalendar(ExtensionMethods.LAST_CALENDAR_FILENAME);
+            Save();
 
             Exit();
         }
@@ -344,6 +344,11 @@ namespace Weather_Calendar_D20
         private void Exit(int code = 0)
         {
             Environment.Exit(code);
+        }
+
+        public void Save()
+        {
+            CalendarData.SaveCalendar(ExtensionMethods.LAST_CALENDAR_FILENAME);
         }
 
         #endregion
@@ -364,13 +369,18 @@ namespace Weather_Calendar_D20
         {
             CalendarData.Clear();
 
-            CalendarData = CalendarData.LoadCalendar(filename);
+            WeatherNoteCalendarData tempCalendar = WeatherNoteCalendarData.LoadCalendar(filename);
 
-            GregorianCalendar.SelectedDate = CalendarData.CurrentDate;
-            GregorianCalendar.SelectedDate.SetSelectedDate(this);
+            if (tempCalendar != null)
+            {
+                CalendarData = tempCalendar;
 
-            TbxGeneralNotes.Text = CalendarData.GeneralNotes;
-            Advance();
+                GregorianCalendar.SelectedDate = CalendarData.CurrentDate;
+                GregorianCalendar.SelectedDate.SetSelectedDate(this);
+
+                TbxGeneralNotes.Text = CalendarData.GeneralNotes;
+                Advance();
+            }
         }
 
         #endregion

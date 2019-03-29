@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using Weather_Calendar_D20.Extensions;
-using Weather_Calendar_D20.Weather.Variation;
+using Weather_Calendar.Extensions;
+using Weather_Calendar.Weather.Variation;
 
-namespace Weather_Calendar_D20.Weather.Data
+namespace Weather_Calendar.Weather.Data
 {
     #region Public Enums
 

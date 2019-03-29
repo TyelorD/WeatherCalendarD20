@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Weather_Calendar_D20
+namespace Weather_Calendar
 {
     /// <summary>
     /// Interaction logic for App.xaml

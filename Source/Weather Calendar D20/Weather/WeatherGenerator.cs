@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using Weather_Calendar_D20.Extensions;
-using Weather_Calendar_D20.Weather.Data;
-using Weather_Calendar_D20.Weather.Variation;
+using Weather_Calendar.Extensions;
+using Weather_Calendar.Weather.Data;
+using Weather_Calendar.Weather.Variation;
 
-namespace Weather_Calendar_D20.Weather
+namespace Weather_Calendar.Weather
 {
     public class WeatherGenerator
     {

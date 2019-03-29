@@ -1,12 +1,12 @@
-﻿<Window x:Class="Weather_Calendar_D20.WeatherNotesWindow"
+﻿<Window x:Class="Weather_Calendar.WeatherNotesWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:p="clr-namespace:Weather_Calendar_D20.Properties"
-        xmlns:local="clr-namespace:Weather_Calendar_D20"
+        xmlns:p="clr-namespace:Weather_Calendar.Properties"
+        xmlns:local="clr-namespace:Weather_Calendar"
         mc:Ignorable="d"
-        Title="MainWindow" Height="{Binding Source={x:Static p:Settings.Default}, Path=LastHeight, Mode=TwoWay}" Width="{Binding Source={x:Static p:Settings.Default}, Path=LastWidth, Mode=TwoWay}">
+        Title="Weather Calendar d20" Height="{Binding Source={x:Static p:Settings.Default}, Path=LastHeight, Mode=TwoWay}" Width="{Binding Source={x:Static p:Settings.Default}, Path=LastWidth, Mode=TwoWay}">
     <DockPanel LastChildFill="True" x:Name="layoutRoot">
         <Menu x:Name="Menu" Height="Auto" Margin="0,0,0,0" VerticalAlignment="Top" DockPanel.Dock="Top" MinHeight="18">
             <MenuItem x:Name="MnuFile" Header="_File" Height="Auto" Width="Auto">

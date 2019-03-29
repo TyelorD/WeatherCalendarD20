@@ -4,7 +4,7 @@
 
 using System;
 
-namespace Weather_Calendar_D20.Weather.Variation
+namespace Weather_Calendar.Weather.Variation
 {
     public class Dice
     {

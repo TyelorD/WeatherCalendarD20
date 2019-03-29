@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Weather_Calendar_D20.Weather.Data
+namespace Weather_Calendar.Weather.Data
 {
     public class DescriptionData
     {

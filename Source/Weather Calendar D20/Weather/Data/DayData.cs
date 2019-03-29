@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using Weather_Calendar_D20.Weather.Data;
+using Weather_Calendar.Weather.Data;
 
-namespace Weather_Calendar_D20.Weather.Data
+namespace Weather_Calendar.Weather.Data
 {
     [Serializable]
     public class DayData : IXmlSerializable

@@ -115,9 +115,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DateHelpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="BattleTrackerIcon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

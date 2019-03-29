@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Weather_Calendar_D20.Weather.Data;
+using Weather_Calendar.Weather.Data;
 using System.Windows.Controls;
 using System.Windows;
-using Weather_Calendar_D20.Weather;
+using Weather_Calendar.Weather;
 
-namespace Weather_Calendar_D20.Extensions
+namespace Weather_Calendar.Extensions
 {
     static class ExtensionMethods
     {
@@ -331,7 +331,7 @@ namespace Weather_Calendar_D20.Extensions
 
             window.CalendarData.SetDictionaryWeatherDatas(dateTime, weatherDatas);
 
-            dateTime.SetSelectedDayWeatherNotes(window.CalendarData, window.TbxSelectedDayNotes, window.LblSelectedDayWeather);
+            //dateTime.SetSelectedDayWeatherNotes(window.CalendarData, window.TbxSelectedDayNotes, window.LblSelectedDayWeather);
 
             e.Handled = true;
         }

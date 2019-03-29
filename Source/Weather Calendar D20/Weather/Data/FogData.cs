@@ -6,13 +6,13 @@
 
 using System;
 using System.Collections.Generic;
-using Weather_Calendar_D20.Weather.Variation;
-using Weather_Calendar_D20.Extensions;
+using Weather_Calendar.Weather.Variation;
+using Weather_Calendar.Extensions;
 using System.Xml.Serialization;
 using System.Xml.Schema;
 using System.Xml;
 
-namespace Weather_Calendar_D20.Weather.Data
+namespace Weather_Calendar.Weather.Data
 {
     #region Public Enums
 

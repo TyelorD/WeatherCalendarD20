@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Weather_Calendar_D20.Properties {
+namespace Weather_Calendar.Properties {
     using System;
     
     

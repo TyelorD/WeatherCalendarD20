@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
-using Weather_Calendar_D20.Extensions;
+using Weather_Calendar.Extensions;
 using wforms = System.Windows.Forms;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 
-namespace Weather_Calendar_D20.Weather.Data
+namespace Weather_Calendar.Weather.Data
 {
     [XmlRoot("CalendarData")]
     public class WeatherNoteCalendarData : Dictionary<DateTime, DayData>, IXmlSerializable
@@ -69,7 +69,7 @@ namespace Weather_Calendar_D20.Weather.Data
             }
         }
 
-        public WeatherNoteCalendarData LoadCalendar(string filename = null)
+        public static WeatherNoteCalendarData LoadCalendar(string filename = null)
         {
             if (string.IsNullOrEmpty(filename))
             {
@@ -79,6 +79,8 @@ namespace Weather_Calendar_D20.Weather.Data
 
                     if (dialog.ShowDialog() == wforms.DialogResult.OK)
                         return LoadCalendar(dialog.FileName);
+                    else
+                        return null;
                 }
             }
             else if (File.Exists(filename))
